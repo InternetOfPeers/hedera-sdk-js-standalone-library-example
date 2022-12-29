@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Web App for Hashgraph SDK Standalone Library</title>
+</head>
+
+<body>
+  <p>Check the console output, you should see a new randomly generated key pair.</p>
+  <p>You can also use `hashgraph` global object to test the SDK from the console, for example:</p>
+  <p>
+    <code>
+      let client = hashgraph.Client.forTestnet()
+    </code>
+  </p>
+  <script type="module">
+    // Test the sdk internally
+    import * as sdk from "./assets/hashgraph-sdk-js-bundle.js";
+    
+    let hashgraph = sdk.default;
+    let priv = hashgraph.PrivateKey.generate();
+    let pub = priv.publicKey;
+    console.log("Randomly generated key pair", priv.toString(), pub.toString());
+
+    // Expose the sdk externally if you want to test with the console
+    window.hashgraph = sdk.default; 
+  </script>
+
+</body>
+
+</html>
