@@ -15,7 +15,7 @@ npm install
 npm run build
 ```
 
-Get and use the generated `dist/assets/hashgraph-sdk-js-bundle.js` file.
+Get and use the generated `dist/assets/hedera-sdk-js-bundle.js` file.
 
 ### Buil and test an example with the browser
 
