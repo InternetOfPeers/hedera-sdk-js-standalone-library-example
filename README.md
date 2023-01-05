@@ -1,4 +1,4 @@
-# Hashgraph SDK JS Standalone Library
+# Hedera SDK JS Standalone Library
 
 This example shows how to build the Hashgraph SDK library as a standalone js.
 This is a temporary workaround, waiting for the same feature to be added to the official sdk.
