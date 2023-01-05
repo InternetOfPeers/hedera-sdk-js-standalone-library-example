@@ -9,14 +9,6 @@ This is a temporary workaround, waiting for the same feature to be added to the 
 npm install
 ```
 
-### Compile and Minify for production (browser must support type="module")
-
-```sh
-npm run build
-```
-
-Get and use the generated `dist/assets/hedera-sdk-js-bundle.js` file. See `public/example.html` for an example.
-
 ### Compile and Minify for production (lib versions: UMD, UMD minified and CommonJS)
 
 ```sh
@@ -24,6 +16,14 @@ npm run build:lib
 ```
 
 Get and use the generated `dist/assets/hedera-sdk-js-bundle.umd.min.js` file. See `public/example-lib.html` for an example.
+
+### Compile and Minify for production (browser must support type="module")
+
+```sh
+npm run build
+```
+
+Get and use the generated `dist/assets/hedera-sdk-js-bundle.js` file. See `public/example.html` for an example.
 
 ### Buil and test an example with the browser
 
